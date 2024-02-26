@@ -6,5 +6,7 @@ const app = express();
 dotenv.config({ path: "backend/config/config.env" });
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server is running on the port ${process.env.PORT}`);
+  console.log(
+    `Server is running on the port ${process.env.PORT} in ${process.env.NODE_ENV} mode`
+  );
 });
