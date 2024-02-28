@@ -24,9 +24,6 @@ export const getProductDetails = async (req, res, next) => {
 
   if (!product) {
     return next(new ErrorHandler("Product not found.", 404));
-    // return res.status(404).json({
-    //   error: "Product not found.",
-    // });
   }
 
   res.status(200).json({
